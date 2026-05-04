@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Environment Monitor Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- HEADER (giữ giống trang chính) -->
+<header>
+    <div class="container">
+        <h1>Environment Monitor Dashboard</h1>
+        <p>ESP32 | WebSocket | MongoDB</p>
+    </div>
+</header>
+
+<!-- OVERVIEW -->
+<section class="about">
+    <div class="container">
+        <h2>Overview</h2>
+        <p>
+            Đây là hệ thống giám sát môi trường realtime sử dụng ESP32.
+            Dữ liệu được thu thập từ sensor và gửi lên server để hiển thị trên dashboard web.
+        </p>
+    </div>
+</section>
+
+<!-- DEMO / IMAGE -->
+<section class="projects">
+    <div class="container">
+        <h2>Demo</h2>
+
+        <div class="card">
+            <img src="demo.png" width="100%">
+            <p>Giao diện dashboard hiển thị dữ liệu realtime.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section class="skills">
+    <div class="container">
+        <h2>Features</h2>
+        <ul>
+            <li>Realtime monitoring</li>
+            <li>Web dashboard</li>
+            <li>Sensor integration</li>
+            <li>Data storage</li>
+        </ul>
+    </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="about">
+    <div class="container">
+        <h2>How It Works</h2>
+        <p>
+            Sensor → ESP32 → Server → MongoDB → Web Dashboard
+        </p>
+    </div>
+</section>
+
+<!-- TECH STACK -->
+<section class="skills">
+    <div class="container">
+        <h2>Tech Stack</h2>
+        <ul>
+            <li>ESP32</li>
+            <li>WebSocket</li>
+            <li>Node.js</li>
+            <li>MongoDB</li>
+        </ul>
+    </div>
+</section>
+
+<!-- RESULT -->
+<section class="about">
+    <div class="container">
+        <h2>Result</h2>
+        <p>
+            Hệ thống hoạt động realtime, dữ liệu cập nhật nhanh và ổn định.
+        </p>
+    </div>
+</section>
+
+<!-- LINKS -->
+<section class="contact">
+    <div class="container">
+        <h2>Links</h2>
+        <p>GitHub: <a href="#">Link repo của bạn</a></p>
+        <p>Demo: <a href="#">Link demo (nếu có)</a></p>
+    </div>
+</section>
+
+<!-- BACK BUTTON -->
+<section class="about">
+    <div class="container">
+        <a href="index.html">⬅ Quay lại trang chính</a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Nam Anh</p>
+</footer>
+
+</body>
+</html>
