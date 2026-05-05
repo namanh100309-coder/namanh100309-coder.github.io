@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Environment Monitor Dashboard</title>
+    <title>Water Quality Monitoring System</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -12,8 +12,8 @@
 <!-- HEADER (giữ giống trang chính) -->
 <header>
     <div class="container">
-        <h1>Environment Monitor Dashboard</h1>
-        <p>ESP32 | WebSocket | MongoDB</p>
+        <h1>Water Quality Monitoring System</h1>
+        <p>ESP32 | IoT Technology</p>
     </div>
 </header>
 
@@ -22,8 +22,9 @@
     <div class="container">
         <h2>Overview</h2>
         <p>
-            Đây là hệ thống giám sát môi trường realtime sử dụng ESP32.
-            Dữ liệu được thu thập từ sensor và gửi lên server để hiển thị trên dashboard web.
+            This system is built around the ESP32 to create a low-cost, real-time water quality monitoring system. 
+            Data is collected from the sensors and sent to the server to be displayed on the web dashboard.
+            The system can be easily expanded and applied in various scenarios like drinking water quality monitoring, aquaculture, and environmental monitoring
         </p>
     </div>
 </section>
@@ -35,9 +36,13 @@
 
         <div class="card">
             <img src="demo.png" width="100%">
-            <p>Giao diện dashboard hiển thị dữ liệu realtime.</p>
+            <p>3D Layout Mode (Forward) </p>
         </div>
 
+        <div class="card">
+            <img src="demo.png" width="100%">
+            <p>3D Layout Mode (Backward) </p>
+        </div>
     </div>
 </section>
 
@@ -46,21 +51,11 @@
     <div class="container">
         <h2>Features</h2>
         <ul>
-            <li>Realtime monitoring</li>
-            <li>Web dashboard</li>
-            <li>Sensor integration</li>
-            <li>Data storage</li>
+            <li>Measure the Total Dissolved Solids (TDS) in water </li>
+            <li>Measure water temperature using the DS18B20 sensor</li>
+            <li>Display the data on an OLED screen</li>
+            <li>Upload the data to an IoT cloud platform for remote monitoring</li>
         </ul>
-    </div>
-</section>
-
-<!-- HOW IT WORKS -->
-<section class="about">
-    <div class="container">
-        <h2>How It Works</h2>
-        <p>
-            Sensor → ESP32 → Server → MongoDB → Web Dashboard
-        </p>
     </div>
 </section>
 
@@ -69,12 +64,31 @@
     <div class="container">
         <h2>Tech Stack</h2>
         <ul>
-            <li>ESP32</li>
-            <li>WebSocket</li>
-            <li>Node.js</li>
-            <li>MongoDB</li>
+            <li>ESP32 : the microcontroller for this IoT solution</li>
+            <li>TDS sensor: Measures water conductivity to estimate TDS levels in parts per million (ppm) </li>
+            <li>DS18B20 temperature sensor: Measures the water temperature with high accuracy</li>
+            <li>SSD1306 OLED display: Displays the TDS and temperature values for real-time monitoring</li>
+            <li>ThingSpeak cloud platform: Stores and visualizes the data for remote access</li>
         </ul>
     </div>
+</section>
+    
+    <!-- HOW IT WORKS -->
+<section class="about">
+    <div class="container">
+        <h2>How It Works</h2>
+        <p>
+            Sensor → ESP32 → Server → MongoDB → Web Dashboard
+        </p>
+         <p>
+            1.	The ESP32 initializes the sensors and the OLED display.
+            2.	It periodically reads data from the TDS sensor and DS18B20.
+            3.	The system calculates the TDS value, compensates for temperature, and displays the data on the OLED screen.
+            4.	Data is sent to ThingSpeak using the ESP32’s Wi-Fi capabilities for cloud monitoring.
+
+        </p>
+    </div>
+    
 </section>
 
 <!-- RESULT -->
@@ -82,7 +96,8 @@
     <div class="container">
         <h2>Result</h2>
         <p>
-            Hệ thống hoạt động realtime, dữ liệu cập nhật nhanh và ổn định.
+            This allows users to remotely monitor the water quality and ensure that it meets the required standards.
+            The system operates in real-time, not only with fast and stable data updates, but also affordable and effective solution for monitoring water quality.
         </p>
     </div>
 </section>
