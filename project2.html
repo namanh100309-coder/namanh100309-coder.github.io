@@ -1,1 +1,132 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Table Tennis Coach</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+<!-- HEADER (giữ giống trang chính) -->
+<header>
+    <div class="container">
+        <h1>AI Table Tennis Coach</h1>
+        <p>IMU sensor</p>
+    </div>
+</header>
+
+<!-- OVERVIEW -->
+<section class="about">
+    <div class="container">
+        <h2>Overview</h2>
+        <p>
+            AI-powered table tennis training system that analyzes strokes, movement, and technique in real time using video and sensor data.
+          Delivers instant, data-driven feedback to help players improve faster like a personal coach.
+        </p>
+    </div>
+</section>
+
+<!-- DEMO / IMAGE -->
+<section class="projects">
+    <div class="container">
+        <h2>Demo</h2>
+
+        <div class="card">
+            <img src="Forward.png" width="100%">
+            <p>3D Layout Mode (Forward) </p>
+        </div>
+
+        <div class="card">
+            <img src="Backward.png" width="100%">
+            <p>3D Layout Mode (Backward) </p>
+        </div>
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section class="skills">
+    <div class="container">
+        <h2>Features</h2>
+        <ul>
+            <li>AI Pose & Action Recognition </li>
+            <li>Movement & Footwork Analysis</li>
+            <li>IMU Sensor Integration</li>
+            <li>Real-time Feedback & Dashboard</li>
+        </ul>
+    </div>
+</section>
+
+<!-- TECH STACK -->
+<section class="skills">
+    <div class="container">
+        <h2>Tech Stack</h2>
+        <ul>
+            <li>AI/ML: YOLOv8 / YOLOv11 Pose, LSTM / Transformer</li>
+            <li>IMU (MPU6050 / ICM-20948), ESP32 / Arduino </li>
+            <li>Real-time video processing (60–120 FPS)</li>
+            <li>Data: Time-series analysis, motion tracking, sensor fusion</li>
+           
+        </ul>
+    </div>
+</section>
+    
+    <!-- HOW IT WORKS -->
+<section class="about">
+    <div class="container">
+        <h2>How It Works</h2>
+        <p>
+            Sensor → ESP32 → Server → MongoDB → Web Dashboard
+        </p>
+         <p>
+            1.	The camera records the player during training
+            2.	AI detects body pose and extracts keypoints
+            3.	A model classifies actions from motion sequences
+            4.	The IMU sensor collects racket data (speed, angle, force)
+            5. Video and sensor data are synchronized via timestamps
+            6. The system analyzes and visualizes performance insights
+
+        </p>
+    </div>
+    
+</section>
+
+<!-- RESULT -->
+<section class="about">
+    <div class="container">
+        <h2>Result</h2>
+        <p>
+           - Action recognition accuracy ≥ 85%
+           - High-precision synchronization between video and IMU data
+           + Interactive dashboard with:
+           + Performance charts
+           + Movement heatmaps
+           - Training statistics and history
+        </p>
+    </div>
+</section>
+
+<!-- LINKS -->
+<section class="contact">
+    <div class="container">
+        <h2>Links</h2>
+        <p>GitHub: <a href="#">Link repo của bạn</a></p>
+        <p>Demo: <a href="#">Link demo (nếu có)</a></p>
+    </div>
+</section>
+
+<!-- BACK BUTTON -->
+<section class="about">
+    <div class="container">
+        <a href="index.html">⬅ Quay lại trang chính</a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Nam Anh</p>
+</footer>
+
+</body>
+</html>      
